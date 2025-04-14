@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paulinho Cell Shop - Celulares e Acessórios</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Paulinho Cell Shop</div>
+        
+        <nav class="desktop-nav">
+            <ul class="categories">
+                <li><a href="#smartphones">Smartphones</a></li>
+                <li><a href="#cases">Capas</a></li>
+                <li><a href="#headphones">Fones</a></li>
+                <li><a href="#chargers">Carregadores</a></li>
+            </ul>
+        </nav>
+        
+        <button class="mobile-menu-button" aria-label="Abrir menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+        <nav class="mobile-nav">
+            <ul class="categories">
+                <li><a href="#smartphones">Smartphones</a></li>
+                <li><a href="#cases">Capas</a></li>
+                <li><a href="#headphones">Fones</a></li>
+                <li><a href="#chargers">Carregadores</a></li>
+            </ul>
+        </nav>
+        
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Buscar produtos...">
+            <button id="search-button">Buscar</button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Bem-vindo à Paulinho Cell Shop</h1>
+            <div class="hero-highlight">
+                <p>🔥 <span id="deal-count">12</span> ofertas especiais hoje!</p>
+            </div>
+            <p class="hero-subtitle">Os melhores celulares e acessórios com os menores preços do mercado</p>
+            <div class="hero-cta">
+                <a href="#featured" class="cta-button">Ver Ofertas</a>
+                <a href="#categories" class="cta-button secondary">Explorar Categorias</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="img/hero-smartphones.png" alt="Celulares e acessórios" loading="lazy">
+        </div>
+    </section>
+
+    <section id="filters">
+        <h2>Filtrar Produtos</h2>
+        <div class="filter-options">
+            <select id="price-filter">
+                <option value="">Todos os preços</option>
+                <option value="0-1000">Até R$ 1.000</option>
+                <option value="1000-2000">R$ 1.000 a R$ 2.000</option>
+                <option value="2000-5000">R$ 2.000 a R$ 5.000</option>
+                <option value="5000+">Acima de R$ 5.000</option>
+            </select>
+            
+            <select id="category-filter">
+                <option value="">Todas as categorias</option>
+                <option value="smartphones">Smartphones</option>
+                <option value="cases">Capas</option>
+                <option value="headphones">Fones</option>
+                <option value="chargers">Carregadores</option>
+            </select>
+            
+            <select id="brand-filter">
+                <option value="">Todas as marcas</option>
+                <option value="Apple">Apple</option>
+                <option value="Samsung">Samsung</option>
+                <option value="Xiaomi">Xiaomi</option>
+            </select>
+            
+            <select id="sort-by">
+                <option value="name-asc">Nome (A-Z)</option>
+                <option value="name-desc">Nome (Z-A)</option>
+                <option value="price-asc">Preço (Menor)</option>
+                <option value="price-desc">Preço (Maior)</option>
+            </select>
+            
+            <button id="clear-filters">Limpar Filtros</button>
+        </div>
+    </section>
+
+    <main>
+        <section id="featured">
+            <h2>Destaques</h2>
+            <div class="products-container"></div>
+        </section>
+
+        <section id="category-smartphones">
+            <h2>Smartphones</h2>
+            <div class="products-container"></div>
+        </section>
+
+        <section id="category-cases">
+            <h2>Capas</h2>
+            <div class="products-container"></div>
+        </section>
+
+        <section id="category-headphones">
+            <h2>Fones de Ouvido</h2>
+            <div class="products-container"></div>
+        </section>
+
+        <section id="category-chargers">
+            <h2>Carregadores</h2>
+            <div class="products-container"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Sobre Nós</h3>
+                <p>A Paulinho Cell Shop é a maior loja de tecnologia de Caraúbas, com os melhores preços e condições.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Links Úteis</h3>
+                <ul>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Termos de Serviço</a></li>
+                    <li><a href="#">Trocas e Devoluções</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <p>contato@paulinhocellshop.com.br</p>
+                <p>(84) 1234-5678</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Paulinho Cell Shop - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script src="js/products-data.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
